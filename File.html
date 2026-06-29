@@ -1,13 +1,4 @@
-<?php
-session_start();
-// ===================== ADVANCED FULL-STACK WEBSITE =====================
-// SQLite Database Setup
-$dbFile = 'advanced_app.db';
-$pdo = null;
-try {
-    $pdo = new PDO("sqlite:$dbFile");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // Create contacts table
+
     $pdo->exec("CREATE TABLE IF NOT EXISTS contacts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT NOT NULL,
