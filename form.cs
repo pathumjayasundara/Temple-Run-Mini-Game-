@@ -28,7 +28,7 @@ namespace mini_project
         int score = 0, coinCount = 0;
         bool gameOver = false, gameStarted = false;
         int highScore = 0;
-        bool godMode = false;              // 👉 God Mode flag
+        bool godMode = false;             
         Random rnd = new Random();
 
         List<GameObj> obstacles = new List<GameObj>();
