@@ -1,12 +1,5 @@
 
-        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-    )");
-    // Create newsletter subscribers table (advanced)
-    $pdo->exec("CREATE TABLE IF NOT EXISTS subscribers (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        email TEXT UNIQUE NOT NULL,
-        subscribed_at DATETIME DEFAULT CURRENT_TIMESTAMP
-    )");
+   
 } catch (Exception $e) {
     die("Database error: " . $e->getMessage());
 }
