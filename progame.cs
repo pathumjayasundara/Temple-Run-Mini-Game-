@@ -1,6 +1,4 @@
 
-namespace mini_project
-{
     public class Form1 : Form
     {
         // Constants
