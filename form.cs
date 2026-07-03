@@ -1,16 +1,4 @@
 
-namespace mini_project
-{
-    public class Form1 : Form
-    {
-        const int FormW = 500, FormH = 700;
-        const int LaneCount = 3;
-        const float VanishY = 150f;
-        const float PlayerScreenY = 600f;
-        const float PlayerZ = 100f;
-        const float FarZ = 0f;
-        const float RoadFarZ = 0f;
-
         int playerLane = 1;
         float jumpHeight = 0, jumpVel = 0;
         bool isJumping = false;
