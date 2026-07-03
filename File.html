@@ -1,13 +1,80 @@
-Requests
-$isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
-if ($isAjax) {
-    header('Content-Type: application/json');
-    $action = $_POST['action'] ?? $_GET['action'] ?? '';
-    
-    // 1. Save Contact Message
-    if ($action === 'send_contact' && $_SERVER['REQUEST_METHOD'] === 'POST') {
-        $name = trim($_POST['name'] ?? '');
+
+        $emai
         $email = trim($_POST['email'] ?? '');
+        $message = trim($_POST['message'] ?? '');
+        $errors = [];
+        if (strlen($name) < 2) $errors[] = "Name too short";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
+        if (strlen($message) < 5) $errors[] = "Message too short";
+        if (empty($errors)) {
+            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
+            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        } else {
+            echo json_encode(['success' => false, 'errors' => $errors]);
+        }
+        exit;
+    }
+        $email = trim($_POST['email'] ?? '');
+        $message = trim($_POST['message'] ?? '');
+        $errors = [];
+        if (strlen($name) < 2) $errors[] = "Name too short";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
+        if (strlen($message) < 5) $errors[] = "Message too short";
+        if (empty($errors)) {
+            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
+            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        } else {
+            echo json_encode(['success' => false, 'errors' => $errors]);
+        }
+        exit;
+    }
+        $email = trim($_POST['email'] ?? '');
+        $message = trim($_POST['message'] ?? '');
+        $errors = [];
+        if (strlen($name) < 2) $errors[] = "Name too short";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
+        if (strlen($message) < 5) $errors[] = "Message too short";
+        if (empty($errors)) {
+            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
+            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        } else {
+            echo json_encode(['success' => false, 'errors' => $errors]);
+        }
+        exit;
+    }
+        $email = trim($_POST['email'] ?? '');
+        $message = trim($_POST['message'] ?? '');
+        $errors = [];
+        if (strlen($name) < 2) $errors[] = "Name too short";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
+        if (strlen($message) < 5) $errors[] = "Message too short";
+        if (empty($errors)) {
+            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
+            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        } else {
+            echo json_encode(['success' => false, 'errors' => $errors]);
+        }
+        exit;
+    }
+        $email = trim($_POST['email'] ?? '');
+        $message = trim($_POST['message'] ?? '');
+        $errors = [];
+        if (strlen($name) < 2) $errors[] = "Name too short";
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
+        if (strlen($message) < 5) $errors[] = "Message too short";
+        if (empty($errors)) {
+            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
+            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+        } else {
+            echo json_encode(['success' => false, 'errors' => $errors]);
+        }v
+        exit;
+    }l = trim($_POST['email'] ?? '');
         $message = trim($_POST['message'] ?? '');
         $errors = [];
         if (strlen($name) < 2) $errors[] = "Name too short";
@@ -14083,7 +14150,7 @@ if ($isAjax) {
             loadAdminMessages();
             loadChartStats();
         } else showToast('Delete failed', true);
-    }
+    }vhhjbhjbhjbhjbhjb 
     
     async function adminLogin(password) {
         const formData = new URLSearchParams();
