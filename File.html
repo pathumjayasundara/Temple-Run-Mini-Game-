@@ -1,8 +1,4 @@
 
-        $emai
-        $email = trim($_POST['email'] ?? '');
-        $message = trim($_POST['message'] ?? '');
-        $errors = [];
         if (strlen($name) < 2) $errors[] = "Name too short";
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
         if (strlen($message) < 5) $errors[] = "Message too short";
