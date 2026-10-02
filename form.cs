@@ -5,12 +5,7 @@
         bool isSliding = false;
         int slideTimer = 0;
         int animFrame = 0, animCnt = 0;
-        float gameSpeed = 1.5f;
-        int score = 0, coinCount = 0;
-        bool gameOver = false, gameStarted = false;
-        int highScore = 0;
-        bool godMode = false;             
-        Random rnd = new Random();
+        flo
 
         List<GameObj> obstacles = new List<GameObj>();
         List<GameObj> coins = new List<GameObj>();
