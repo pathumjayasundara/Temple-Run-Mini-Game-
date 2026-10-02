@@ -6,10 +6,7 @@
         if (strlen($name) < 2) $errors[] = "Name too short";
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = "Invalid email";
         if (strlen($message) < 5) $errors[] = "Message too short";
-        if (empty($errors)) {
-            $stmt = $pdo->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
-            $stmt->execute([htmlspecialchars($name), htmlspecialchars($email), htmlspecialchars($message)]);
-            echo json_encode(['success' => true, 'message' => 'Message sent successfully!']);
+       code(['success' => true, 'message' => 'Message sent successfully!']);
         } else {
             echo json_encode(['success' => false, 'errors' => $errors]);
         }
