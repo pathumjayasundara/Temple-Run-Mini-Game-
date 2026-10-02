@@ -1,11 +1,7 @@
 
     public class Form1 : Form
     { horizon
-        const float PlayerScreenY = 600f;  // player draw Y
-        const float PlayerZ = 100f;        // player logical Z (nearest)
-        const float MaxZ = 600f;           // farthest spawn Z
-        const float RoadTopZ = 50f;        // road top Z
-
+      
         // Game state
         int playerLane = 1;                // 0=left,1=mid,2=right
         float jumpHeight = 0, jumpVel = 0;
