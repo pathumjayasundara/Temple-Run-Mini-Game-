@@ -1,13 +1,7 @@
 
 namespace mini_project
 {
-    public class Form1 : Form
-    {
-        const float RoadTopZ = 50f;
-namespace mini_project
-{
-    public class Form1 : Form
-    {
+    
         // ===== Constants =====
         const int FormW = 500, FormH = 700;
         const int LaneCount = 3;
