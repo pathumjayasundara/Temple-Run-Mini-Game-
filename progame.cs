@@ -1,10 +1,6 @@
 
     public class Form1 : Form
-    {
-        // Constants
-        const int FormW = 500, FormH = 700;
-        const int LaneCount = 3;
-        const float VanishY = 150f;        // horizon
+    { horizon
         const float PlayerScreenY = 600f;  // player draw Y
         const float PlayerZ = 100f;        // player logical Z (nearest)
         const float MaxZ = 600f;           // farthest spawn Z
