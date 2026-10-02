@@ -5,8 +5,7 @@
        code(['success' => true, 'message' => 'Message sent successfully!']);
         } else {
             echo json_encode(['success' => false, 'errors' => $errors]);
-        }
-        exit;
+     
     }
         $email = trim($_POST['email'] ?? '');
         $message = trim($_POST['message'] ?? '');
