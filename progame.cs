@@ -3,8 +3,7 @@
         {
             ClientSize = new Size(FormW, FormH);
             Text = "Temple Run 3D – mini_project";
-            KeyPreview = true;
-            DoubleBuffered = false;
+            
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             KeyDown += OnKeyDown
             Paint += OnPaint;
