@@ -1,11 +1,4 @@
 
-        // Game state
-
-        // Object lists
-
-        Random rnd = new Random();
-
-        // Graphics
         System.Windows.Forms.Timer timer;
         BufferedGraphicsContext bgCtx;
         BufferedGraphics buffer;
