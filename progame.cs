@@ -7,8 +7,7 @@
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
             KeyDown += OnKeyDown
             Paint += OnPaint;
-            Resize += (_, _) => InitBuffer();
-            Load += (_, _) => InitBuffer();
+          
 
             GenerateBackground();
 
