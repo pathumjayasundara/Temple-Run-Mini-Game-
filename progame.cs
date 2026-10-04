@@ -9,9 +9,7 @@
     
 
         // Object lists
-        List<GameObj> obstacles = new List<GameObj>();
-        List<GameObj> coins = new List<GameObj>();
-        List<BgElem> bgElements = new List<BgElem>();
+
         Random rnd = new Random();
 
         // Graphics
