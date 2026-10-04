@@ -1,7 +1,4 @@
-
-namespace mini_project
-{
-    
+ 
         // ===== Constants =====
       00f;
         const float RoadTopZ = 50f;
