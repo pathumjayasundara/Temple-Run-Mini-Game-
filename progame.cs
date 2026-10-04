@@ -1,7 +1,4 @@
 
-    public class Form1 : Form
-    { horizon
-      
         // Game state
         int playerLane = 1;                // 0=left,1=mid,2=right
         float jumpHeight = 0, jumpVel = 0;
