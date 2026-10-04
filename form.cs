@@ -1,19 +1,4 @@
 
-        int playerLane = 1;
-        float jumpHeight = 0, jumpVel = 0;
-        bool isJumping = false;
-        bool isSliding = false;
-        int slideTimer = 0;
-        int animFrame = 0, animCnt = 0;
-        flo
-
-        List<GameObj> obstacles = new List<GameObj>();
-        List<GameObj> coins = new List<GameObj>();
-        List<BgElem> bgElements = new List<BgElem>();
-
-        System.Windows.Forms.Timer timer;
-        BufferedGraphicsContext bgCtx;
-        BufferedGraphics buffer;
 
         public Form1()
         {
