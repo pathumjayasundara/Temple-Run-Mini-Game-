@@ -6,10 +6,7 @@
         bool isSliding = false;
         int slideTimer = 0;
         int animFrame = 0, animCnt = 0;
-        float gameSpeed = 5.0f;
-        int score = 0, coinScore = 0;
-        bool gameOver = false, gameStarted = false;
-        int highScore = 0;
+    
 
         // Object lists
         List<GameObj> obstacles = new List<GameObj>();
