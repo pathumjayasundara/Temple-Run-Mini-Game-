@@ -1,8 +1,4 @@
 
-        System.Windows.Forms.Timer timer;
-        BufferedGraphicsContext bgCtx;
-        BufferedGraphics buffer;
-
         public Form1()
         {
             ClientSize = new Size(FormW, FormH);
