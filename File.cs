@@ -1,37 +1,4 @@
- 
-        // ===== Constants =====
-      00f;
-        const float RoadTopZ = 50f;
-namespace mini_project
-{
-    public class Form1 : Form
-    {
-        // ===== Constants =====
-        const int FormW = 500, FormH = 700;
-        const int LaneCount = 3;
-        const float VanishY = 150f;
-        const float PlayerScreenY = 600f;
-        const float PlayerBaseZ = 100f;
-        const float MaxZ = 600f;
-        const float RoadTopZ = 50f;
-namespace mini_project
-{
-    public class Form1 : Form
-    {
-        // ===== Constants =====
-        const int FormW = 500, FormH = 700;
-        const int LaneCount = 3;
-        const float VanishY = 150f;
-        const float PlayerScreenY = 600f;
-        const float PlayerBaseZ = 100f;
-        const float MaxZ = 600f;
-        const float RoadTopZ = 50f;
-namespace mini_project
-{
-    public class Form1 : Form
-    {
-        // ===== Constants =====
-        const int FormW = 500, FormH = 700;
+
         const int LaneCount = 3;
         const float VanishY = 150f;
         const float PlayerScreenY = 600f;
